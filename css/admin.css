@@ -1,0 +1,217 @@
+<<<<<<< Updated upstream
+=======
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+}
+
+.columns {
+    flex: 1;
+    padding: 1rem;
+}
+
+.main {
+    background-color: #fff;
+}
+
+/* Sidebar One styles */
+#sidebar-one {
+    width: 20%;
+    min-width: 250px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    background-color: #333;
+    color: #fff;
+}
+
+#logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    margin-top: 1rem;
+}
+button:hover {
+    background-color: #025905;
+}
+
+.button-primary {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Data List styles */
+.data-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.data-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.data-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.data-item button {
+    margin-left: auto;
+}
+
+/* Parent container styles */
+#parent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    min-width: 75%;
+}
+
+/* Summary section styles */
+.summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    max-width: 97%;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+.card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Content section styles */
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    max-width: 97%;
+}
+img {
+    max-width: 70%;
+    max-height: 70px;
+}
+#pagination {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.PageBtn {
+    width: 50px;
+    height: 30px;
+    border: none;
+    background-color: rgb(52, 52, 52);
+    color: #f2f2f2;
+    border-radius: 5px;
+    margin-left:  10px;
+    margin-right:  10px;
+}
+@media screen and (max-width: 768px) {
+    /* Sidebar One styles */
+    #sidebar-one {
+        width: 100%;
+        height: auto;
+
+    }
+
+    /* Data List styles */
+    .data-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+
+    .data-item img {
+        margin-bottom: 1rem;
+    }
+
+    /* Parent container styles */
+    #parent {
+        display: block;
+    }
+
+    /* Content section styles */
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+>>>>>>> Stashed changes
