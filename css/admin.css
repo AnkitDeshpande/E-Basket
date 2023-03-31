@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 /* Global styles */
 * {
     margin: 0;
@@ -41,8 +40,8 @@ p {
 /* Sidebar One styles */
 #sidebar-one {
     width: 20%;
-    min-width: 250px;
-    max-height: 100vh;
+    min-width: 300px;
+    max-height: 150vh;
     overflow-y: scroll;
     background-color: #333;
     color: #fff;
@@ -90,7 +89,54 @@ input[type="number"] {
     border-radius: 4px;
     border: none;
 }
+.search {
+    display: flex;
+    align-items: center;
+    max-width: 97%;
+}
+#searchbox {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 50px;
+    width: 90%;
+}
 
+#srchbtn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 10%;
+}
+
+#srchbtn:hover {
+    background-color: #3e8e41;
+}
+
+.deletebtn {
+    color: rgb(255, 255, 255);
+    background-color: #710505;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.deletebtn:hover {
+    background-color: red;
+    color: #fff;
+}
 /* Data List styles */
 .data-item {
     display: flex;
@@ -147,6 +193,11 @@ input[type="number"] {
     align-items: center;
     padding: 1rem;
     text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.card > * {
+    margin-top: 10px;
 }
 .card h2 {
     margin-bottom: 0.5rem;
@@ -182,15 +233,15 @@ img {
     background-color: rgb(52, 52, 52);
     color: #f2f2f2;
     border-radius: 5px;
-    margin-left:  10px;
-    margin-right:  10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 @media screen and (max-width: 768px) {
     /* Sidebar One styles */
     #sidebar-one {
         width: 100%;
         height: auto;
-
     }
 
     /* Data List styles */
@@ -214,4 +265,13 @@ img {
         grid-template-columns: 1fr;
     }
 }
->>>>>>> Stashed changes
+@media only screen and (max-width: 480px) {
+    #searchbox {
+        width: 70%;
+    }
+
+    #srchbtn {
+        width: 30%;
+    }
+}
+

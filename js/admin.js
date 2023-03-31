@@ -77,7 +77,35 @@ function display(data) {
                     <h4>$${e.price}</h4>
                     <h4>${e.category}</h4>
                     <h4> ID : ${e.id}</h4>
+                    <button data-id="${e.id}" class="deletebtn">Delete</button>
                 </div>`;
+    });
+    const deleteButtons = document.querySelectorAll(".card button");
+    deleteButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // TODO: Call a function to delete the item with the given ID
+            // console.log(button.dataset.id);
+            deleteCard(button.dataset.id);
+        });
+    });
+}
+
+//DELETE
+
+async function deleteCard(id) {
+    try {
+        let res = await fetch(`http://localhost:3000/products/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-type": "application/json",
+            },
+        });
+        let updated = await res.json();
+        console.log(updated);
+        display(updated);
+    } catch (error) {
+        console.log(error);
+    }
     });
 }
 
@@ -150,6 +178,16 @@ updateScoreItemButton.addEventListener("click", async (e) => {
 // sorting
 sortLowToHighButton.addEventListener("click", async (e) => {
     let sorted = items.sort((a, b) => a.price - b.price);
+    len = sorted.length;
+    let btns = Math.ceil(len / 6);
+    console.log(btns);
+
+    display(sorted);
+
+    pag.innerHTML = null;
+    for (let i = 1; i <= btns; i++) {
+        pag.append(createBtn(i));
+    }
     display(sorted);
 });
 sortHighToLowButton.addEventListener("click", async (e) => {
@@ -176,3 +214,19 @@ function createBtn(i) {
     });
     return btn;
 }
+
+let srchInp = document.getElementById("searchbox");
+document.getElementById("srchbtn").addEventListener("click", () => {
+    let searchParams = srchInp.value;
+    let searched = items.filter((element) => {
+        if (
+            element.title &&
+            element.title.toUpperCase().includes(searchParams.toUpperCase())
+        ) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    display(searched);
+});
