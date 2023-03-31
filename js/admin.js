@@ -53,7 +53,6 @@ async function fetchItems(page) {
 
         len = items.length;
         let btns = Math.ceil(len / 6);
-
         display(data);
 
         pag.innerHTML = null;
@@ -107,6 +106,7 @@ async function deleteCard(id) {
     } catch (error) {
         console.log(error);
     }
+    });
 }
 
 //post
@@ -188,6 +188,7 @@ sortLowToHighButton.addEventListener("click", async (e) => {
     for (let i = 1; i <= btns; i++) {
         pag.append(createBtn(i));
     }
+    display(sorted);
 });
 sortHighToLowButton.addEventListener("click", async (e) => {
     let sorted = items.sort((a, b) => b.price - a.price);

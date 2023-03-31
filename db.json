@@ -550,6 +550,15 @@
                 "https://i.dummyjson.com/data/products/30/3.jpg",
                 "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
             ]
+        },
+        {
+            "title": "ONEPLUS",
+            "images": [
+                "https://oasis.opstatics.com/content/dam/oasis/page/press-photos/10t/green/10T-1.png"
+            ],
+            "category": "laptops",
+            "price": "1500",
+            "id": 33
         }
     ],
     "data": [
