@@ -105,8 +105,7 @@ async function deleteCard(id) {
         display(updated);
     } catch (error) {
         console.log(error);
-    }
-    });
+    };
 }
 
 //post
