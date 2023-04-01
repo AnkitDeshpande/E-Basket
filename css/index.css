@@ -102,11 +102,21 @@ a{text-decoration: none;
 #slidbox1{
     height:335px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* Shiv for your work, for 1st sliding picture. */
+#slidbox1{
+    height:335px;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+}
 
+/* Shiv for your work, for 1st sliding picture. */
+#slidbox1 img{
+    width: 100%;
+    /* margin-bottom: 50px; */
+}
 #dailyseeall{
     height: 70px;
     width: 100%;
@@ -198,7 +208,21 @@ a{text-decoration: none;
     margin-left: 50px;
 }
 
-     
+#slidbox2{
+    
+height:335px;
+width: 100%;
+    /* border: 1px solid red; */
+}
+
+ /* Shiv for your work, for 2st sliding picture. */
+ #slidbox2 {
+    display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap: 10px;
+     /* width: 100%; */
+
+ }
 
 
     

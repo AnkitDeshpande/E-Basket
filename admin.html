@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width,
+				initial-scale=1.0" />
+        <title>Admin</title>
+        <link rel="stylesheet" href="./css/admin.css" />
+    </head>
+
+    <body>
+        <nav id="sidebar-one">
+            <!-- http methods here -->
+            <div class="row">
+                <div class="columns four sidebar-one" id="sidebar-one">
+                    <div id="logo">E-Basket</div>
+                    <h4>Add Item</h4>
+                    <input
+                        type="text"
+                        id="item-name"
+                        class="u-full-width"
+                        placeholder="Items" />
+                    <input
+                        type="text"
+                        id="item-image"
+                        class="u-full-width"
+                        placeholder="Image Url" />
+                    <input
+                        type="text"
+                        id="item-dept"
+                        class="u-full-width"
+                        placeholder="Category" />
+                    <input
+                        type="text"
+                        id="item-price"
+                        class="u-full-width"
+                        placeholder="Price" />
+                    <button
+                        id="add-item"
+                        class="u-full-width button button-primary">
+                        Add Item
+                    </button>
+                    <hr />
+
+                    <h4>update all fields of Item</h4>
+                    <input
+                        type="text"
+                        id="update-item-id"
+                        class="u-full-width"
+                        placeholder="ID" />
+                    <input
+                        type="text"
+                        id="update-item-name"
+                        class="u-full-width"
+                        placeholder="Items" />
+                    <input
+                        type="text"
+                        id="update-item-image"
+                        class="u-full-width"
+                        placeholder="Image Url" />
+                    <input
+                        type="text"
+                        id="update-item-dept"
+                        class="u-full-width"
+                        placeholder="Category" />
+                    <input
+                        type="number"
+                        id="update-item-price"
+                        class="u-full-width"
+                        placeholder="Price" />
+                    <button
+                        id="update-item"
+                        class="u-full-width button button-primary">
+                        Update all fields
+                    </button>
+                    <hr />
+
+                    <h4>update only Price</h4>
+                    <input
+                        type="text"
+                        id="update-score-item-id"
+                        class="u-full-width"
+                        placeholder="ID" />
+                    <input
+                        type="number"
+                        id="update-score-item-price"
+                        class="u-full-width"
+                        placeholder="Price" />
+                    <button
+                        id="update-score-item"
+                        class="u-full-width button button-primary">
+                        Update Item Price
+                    </button>
+                    <hr />
+
+                    <h4>Sort Based On Price</h4>
+                    <button
+                        id="sort-low-to-high"
+                        class="u-full-width button button-primary">
+                        Sort Low To High
+                    </button>
+                    <button
+                        id="sort-high-to-low"
+                        class="u-full-width button button-primary">
+                        Sort High To Low
+                    </button>
+                    <hr />
+
+                    <h4>Filter Based On Price</h4>
+                    <button
+                        id="filter-less-than-1L"
+                        class="u-full-width button button-primary">
+                        less than 1K
+                    </button>
+                    <button
+                        id="filter-more-than-equal-1L"
+                        class="u-full-width button button-primary">
+                        more than or equal 1K
+                    </button>
+                    <hr />
+                </div>
+            </div>
+        </nav>
+        <section id="parent">
+
+            <section class="search">
+                <input type="text" placeholder="Search" id="searchbox" />
+                <button id="srchbtn" value="Search">Search</button>
+            </section>
+            <hr />
+            <section class="summary">
+                <div class="card">
+                    <h2>Total Revenue Generated</h2>
+                    <p>$500,000</p>
+                </div>
+                <div class="card">
+                    <h2>Total Items</h2>
+                    <p>1,000</p>
+                </div>
+                <div class="card">
+                    <h2>Total Exports</h2>
+                    <p>500</p>
+                </div>
+                <div class="card">
+                    <h2>Total Visits</h2>
+                    <p>10,000</p>
+                </div>
+            </section>
+            <section class="content">
+                <!-- content goess here -->
+            </section>
+
+            <div id="pagination">
+                <!-- pagination here -->
+            </div>
+        </section>
+
+        <script src="./js/admin.js"></script>
+    </body>
+</html>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Signup page</title>
+    <script src="https://kit.fontawesome.com/af6a1c623f.js" crossorigin="anonymous"></script>
     <style>
         .container{
             width: 100%;
@@ -16,13 +16,13 @@
             position: relative;
         }
         .formbox{
-            width: 90%;
+            width: 80%;
             max-width: 450px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            background: #fff;
+           background: white;
             padding: 50px 60px 70px;
             text-align: center;
         }
@@ -96,6 +96,7 @@
         .btn button.disable {
          background: #eaeaea;
          color: #555;
+         cursor: pointer;
         }
         #submit{
             background-color: #3c00a0;
@@ -106,16 +107,27 @@
         #submit:hover{
             background-color: #880E4F;
         }
+        #icon i{
+            width: 100px;
+            font-size: 20px;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            background-color: #555;
+        }
     </style>
-    <script src="https://kit.fontawesome.com/af6a1c623f.js" crossorigin="anonymous"></script>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="container">
           <div class="formbox">
-            <h1 id="title">login</h1>
+            <h1 id="title">SignUp</h1>
             <form id="form">
- 
+                 <div class="input-group">
+                    <div class="inputfield" id="namefield">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Type your Name" id="name">
+                 </div>
                  <div class="inputfield">
                     <i class="fa-solid fa-envelope"></i>
                     <input type="email" placeholder="Type your Email" id="email">
@@ -124,18 +136,12 @@
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" placeholder="Type your password" id="password">
                 </div>
-                <p>forget password <a href="#">click Here!</a> </p>
+                
                 <input type="submit" id="submit" value="submit">
 
-                <p>or sing up using</p>
-                <div class="footer-col">
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
- 
+
+                <p>forget password <a href="#">click Here!</a> </p>
+              
             </form>
             
           </div>
@@ -144,35 +150,31 @@
 </body>
 </html>
 <script>
- 
-
-let store = JSON.parse(localStorage.getItem("userdata"))||[];
-let formData2 = document.getElementById("form")
-
-formData2.addEventListener("submit",function(e){
+    
+let formData = document.getElementById("form")
+let userData = []
+formData.addEventListener("submit",function(e){
     e.preventDefault();
-    let email = document.getElementById("email")
-    let password = document.getElementById("password")
+    // console.log("ok")
 
-    let obj2 = {
-        email:formData2.email.value,
-        password:formData2.password.value,
-    } 
-    store.forEach(element=>{
-        if(email.value === "Admin@mail.com" && password.value === "Admin"){
-            location.href = "admin.html"
-        }else if(element.email==obj2.email && element.password==obj2.password){
-            swal("Login Succssesfully!", " ", "success");
-            setTimeout(()=>{
-            window.location.href="index.html"
-        },3000)
-
-        }else{
-            swal("worng credentials !", "Check your email & password", "error");
-        }
-        
-    })
+    let obj = {
+        name:formData.name.value,
+        email:formData.email.value,
+        password:formData.password.value,
+    }
+    // console.log(obj)
+    if(obj.name == "" || obj.email == "" || obj.password == ""){
+        swal("please fill given details!", " ", "error");
+    }else{
+        userData.push(obj)
+        localStorage.setItem("userdata",JSON.stringify(userData))
+        swal("Signup Successesfully!", "You clicked the button!", "success");
+        setTimeout(()=>{
+            window.location.href="./login.html"
+        },2000)
+    }
+    
+    
 })
-
-
+ 
 </script>
