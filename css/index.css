@@ -132,16 +132,18 @@ a{text-decoration: none;
 #slidbox2{
     height:335px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
  /* Shiv for your work, for 2st sliding picture. */
 
 #haveyou{
-    height: 100px;
+    height: 120px;
     width: 100%;
     margin-top: 50px;
     background-color: rgb(83, 6, 6);
+    padding: 10px;
+
 }
 #hhaveyou{
     margin-left: 50px;
