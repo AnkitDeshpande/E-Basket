@@ -102,7 +102,7 @@ a{text-decoration: none;
 .product-container{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(4, 20%);
     margin: 50px 0px 0px 20px;
     gap: 20px;
 }
@@ -162,32 +162,6 @@ margin-top: 20px;
      border: #304FFE solid 1px;
 }
 
-/* .product-container > div{
-    line-height: 5px;
-    padding: 20px 20px;
-    border: grey solid 1px;  
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px; 
-    margin-left: 10px; 
-    margin-right: 10px; 
-    margin-top: 20px;
-    font-weight: lighter;
-    color: #24155f;
-} */
-/* .product-container > div > img{
-    width: 100%;
-}
-.product-container > div > button{
- width: 90px;
- height: 30px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: #24155f;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  border-radius: 5px;
-} */
 .carttotal{
     width: 100%;
     display: flex;
@@ -199,7 +173,7 @@ margin-top: 20px;
     border: gray solid 1px;
     margin-right: 30px;
 }
-.total > a > button{
+.total > button{
     margin-left: 40px;
     width: 340px;
     height: 40px;
@@ -244,34 +218,16 @@ margin-top: 20px;
   padding: 0px 50px 0px 20px;
    line-height: 0px;
 }
-#price{
-   border-top: gray solid 1px;
-   display: flex;
-   justify-content: space-between;
-   padding-right: 40px;
-   text-align: center;
-}
-#price >h3{
-   
-    padding: 0px 0px 0px 20px;
-}
-#totalprice{
-    text-align: center;
-    margin-top: 17px;
-    font-size: 20px;
-    font-weight: bold;
-}
 .card-list{
     border: grey solid 1px;
     padding-bottom: 20px;
     /* line-height: 10px; */
     text-align: center;
-    border-radius: 10px;
 }
 .card_img{
     width: 50%;
     margin: auto;
-    height: 140px;
+    height: 130px;
     padding: 10px;
 }
 .card_img > img{
@@ -290,11 +246,6 @@ margin-top: 20px;
      border-radius: 20px;
      border: none;
 }
-.card_itemprice{
-    font-size: 18px;
-    line-height: 35px;
-    font-weight: bold;
-}
 .card_like{
     width: 220px;
     height: 30px;
@@ -307,7 +258,35 @@ margin-top: 20px;
      border-radius: 20px;
      border: #304FFE solid 1px;
 }
+.card-list{
+    border: grey solid 1px;
+    padding-bottom: 20px;
+    /* line-height: 10px; */
+    text-align: center;
+    border-radius: 10px;
+}
+.card_body{
+font-size: 12px;
+}
 .card_desc{
     font-size: 10px;
     padding: 10px;
+}
+
+.card_cart{
+    width: 220px;
+    height: 30px;
+     /* margin-left: 40px; */
+     margin-top: 10px;
+     background-color: white;
+     color: #304FFE;
+     font-size: 13px;
+     font-weight: bold;
+     border-radius: 20px;
+     border: #304FFE solid 1px;
+}
+.card_itemprice{
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: bold;
 }

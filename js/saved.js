@@ -1,19 +1,13 @@
-let productData = JSON.parse(localStorage.getItem("cart")) || [];
 let WishlistData = JSON.parse(localStorage.getItem("wish-list")) || []
+let productData = JSON.parse(localStorage.getItem("cart")) || []
 
     let container = document.querySelector(".product-container");
-
+    displayProduct(WishlistData)
     
-    displayProduct(productData)
-    
-    function displayProduct(productData){
+    function displayProduct(WishlistData){
         container.innerHTML = "";
 
-        let total = document.getElementById("totalprice")
-        let count = document.getElementById("totalItem")
-        let itemprice = document.getElementById("totalitem")
-
-        productData.forEach((element, index) => {
+        WishlistData.forEach((element, index) => {
         let cardlist = document.createElement("div");
         cardlist.setAttribute("class", "card-list");
       
@@ -57,51 +51,31 @@ let WishlistData = JSON.parse(localStorage.getItem("wish-list")) || []
         deletebtn.textContent = "Remove";
 
        
-        deletebtn.addEventListener("click", (e) => {
-            e.preventDefault()
-            productData.splice(index, 1)
-            displayProduct(productData) 
-           localStorage.setItem("cart", JSON.stringify(productData))  
-            
-         })
+        deletebtn.addEventListener("click", () => {
+        WishlistData.splice(index, 1)
+        displayProduct(WishlistData)
+       localStorage.setItem("wish-list", JSON.stringify(WishlistData))     
+     })
      
-     let likebtn = document.createElement("button");
-        likebtn.classList.add("card_like", "card_likebtn");
-        likebtn.innerText = "Add to Watchlist"
+     let cartbtn = document.createElement("button");
+     cartbtn.classList.add("card_cart", "card_cartbtn");
+     cartbtn.innerText = "Add to Cart"
 
-        likebtn.addEventListener("click", () => {
-        WishlistData.push(element)
-         localStorage.setItem("wish-list", JSON.stringify(WishlistData))
-         alert("Product Added To Watchlist")
+     cartbtn.addEventListener("click", () => {
+        productData.push(element)
+         localStorage.setItem("cart", JSON.stringify(productData))
+         alert("Product Added To Cart")
       })
-
-
    
      card.append(cardImage)
      card.append(cardbody)
      card.append(cardprice)
      card.append(carddiscount)
-     card.append(likebtn)
+     card.append(cartbtn)
     card.append(deletebtn)
      cardlist.append(card)
      container.append(cardlist)
-     
-     document.querySelector(".btn").style.display = "none"
  });
+}
 
-let sum = 0;
-let sum2 = 0
-for(let i=0; i<productData.length; i++){
-    sum2 += productData[i].price;
-    sum += Math.floor(sum2/productData[i].discountPercentage)
-}
-total.textContent = sum;
-itemprice.textContent = sum2;
-count.textContent = productData.length;
-
-if(productData == ""){
-    document.querySelector(".total").style.display = "none";
-    document.querySelector(".btn").style.display= "block"
-}
-}
-  
+   

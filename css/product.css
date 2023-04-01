@@ -1,0 +1,335 @@
+.firstbox{
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgb(242, 238, 238);
+    display: flex;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.firstpick{
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.secondbox{
+    width: 100%;
+    height: 100%;
+    border: 1px solid  rgb(242, 238, 238);
+    margin: auto;
+}
+.thirdbox{
+    width: 100%;
+    height: 70px;
+    border: 1px solid rgb(242, 238, 238);
+    margin: auto;
+    display: flex;
+}
+.longbox{
+    height: 45px;
+    width: 750px;
+    border: 1px solid black;
+    margin-left: 25px;
+    margin-top: 14px;
+}
+.serchbox{
+    height: 45px;
+    width: 152px;
+    border: 1px solid blue;
+    background-color: rgb(40, 40, 225);
+    margin-top:14px ;
+    margin-left: 4px;
+    
+}
+a{text-decoration: none;
+    color: black;
+
+}
+.longbox2{
+    height: 40px;
+    width: 100%;
+    border: 1px solid  rgb(242, 238, 238);
+    display: flex;
+}
+#phi{
+    margin-left: 40px;
+}
+.psign{
+    margin-left: 5px;
+}
+.pdaily{
+    margin-left: 30px
+}
+#psell{
+    margin-left: 500px
+}
+.Watchlist{
+    margin-left: 30px;
+}
+#shopby{
+    margin-left: 15px;
+}
+#hshopby{
+    margin-top: 25px; 
+    line-height: 0px;
+}
+#category{
+    margin-bottom: 6px; 
+    line-height: 0px;
+}
+#serch{
+    margin-bottom: 10px; 
+    cursor: pointer; 
+     width: 550px; 
+     height: 35px ; 
+     font-size: medium; 
+     border: none
+}
+#blueserch{
+    color: aliceblue; 
+    margin-bottom: 80%;
+    margin-left: 50px;
+}
+#advanceed{
+    margin-top: 27px; 
+    margin-left: 15px;
+}
+
+#product-data{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+   margin-top: 30px;
+   margin-left: 100px;
+   gap: 20px;
+}
+
+.card-list{
+    border: grey solid 1px;
+    padding-bottom: 20px;
+    /* line-height: 10px; */
+    text-align: center;
+    border-radius: 10px;
+}
+.card_img{
+    width: 50%;
+    height: 140px;
+    margin: auto;
+    /* border: grey solid 1px; */
+    padding: 10px;
+    /* background-color: gainsboro; */
+}
+.card_img > img{
+width: 100%;
+}
+.card_body{
+font-size: 12px;
+}
+.card_desc{
+    font-size: 10px;
+    padding: 10px;
+}
+
+.card_cart{
+    width: 220px;
+    height: 30px;
+     /* margin-left: 40px; */
+     margin-top: 10px;
+     background-color: #304FFE;
+     color: white;
+     font-size: 13px;
+     font-weight: bold;
+     border-radius: 20px;
+     border: none;
+}
+.card_itemprice{
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: bold;
+}
+.card_like{
+    width: 220px;
+    height: 30px;
+     /* margin-left: 40px; */
+     margin-top: 10px;
+     background-color: white;
+     color: #304FFE;
+     font-size: 13px;
+     font-weight: bold;
+     border-radius: 20px;
+     border: #304FFE solid 1px;
+}
+#sorting{
+   /* margin-left: 1000px; */
+   margin-left: 30px;
+   margin-top: 20px;
+   width: 150px;
+   height: 30px;
+}
+#pagination{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 430px;
+}
+#pagination > button{
+    margin-left: 20px;
+    width: 40px;
+    height: 30px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    #product-data{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+       gap: 20px;
+    }
+    .card_cart{
+        width: 130px;
+        height: 20px;
+        font-size: 8px;
+    }
+    .card_like{
+        width: 130px;
+        height: 20px;
+        font-size: 8px;
+    }
+    .card_img{
+        width: 50%;
+        height: 80px;
+    }
+    .card_body{
+    font-size: 9px;
+    }
+    .card_itemprice{
+        font-size: 12px;
+    }
+    .card_desc{
+        font-size: 8px;
+    }
+    .card_dis{
+        font-size: 9px  
+    }
+    #sorting{
+        /* margin-left: 570px; */
+        margin-top: 20px;
+        width: 120px;
+        height: 20px;
+     }
+     #pagination{
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 350px;
+    }
+    #pagination > button{
+        margin-left: 20px;
+        width: 30px;
+        height: 20px;
+        background-color: black;
+        font-weight: bold;
+        font-size: 10px;
+        color: white;
+        border-radius: 5px;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+    #product-data{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 25%);
+       gap: 20px;
+    }
+    .card_cart{
+        width: 120px;
+        height: 20px;
+        font-size: 8px;
+    }
+    .card_like{
+        width: 120px;
+        height: 20px;
+        font-size: 8px;
+    }
+    .card_img{
+        width: 50%;
+        height: 80px;
+    }
+    .card_body{
+    font-size: 9px;
+    }
+    .card_itemprice{
+        font-size: 12px;
+    }
+    .card_desc{
+        font-size: 8px;
+    }
+    .card_dis{
+        font-size: 9px  
+    }
+    #sorting{
+        margin:auto;
+        margin-top: 10px;
+        width: 120px;
+        height: 20px;
+     }
+     #pagination{
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 230px;
+    }
+    #pagination > button{
+        margin-left: 20px;
+        width: 30px;
+        height: 20px;
+        background-color: black;
+        font-weight: bold;
+        font-size: 10px;
+        color: white;
+        border-radius: 5px;
+    }
+}
+@media only screen and  (max-width: 400px) {
+    #product-data{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 20%);
+       gap: 20px;
+    }
+    .card_cart{
+        width: 100px;
+        height: 20px;
+        font-size: 8px;
+    }
+    .card_like{
+        width: 100px;
+        height: 20px;
+        font-size: 8px;
+    }
+    .card_img{
+        width: 50%;
+        height: 80px;
+    }
+    .card_body{
+    font-size: 9px;
+    }
+    .card_itemprice{
+        font-size: 12px;
+    }
+    .card_desc{
+        font-size: 8px;
+    }
+    .card_dis{
+        font-size: 9px  
+    }
+    #sorting{
+        margin: auto;
+        /* margin-top: 10px; */
+        width: 120px;
+        height: 20px;
+     }
+}
