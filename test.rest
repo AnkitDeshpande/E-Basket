@@ -1,10 +1,4 @@
 GET http://localhost:3000/products
 
-
 ###
 GET http://localhost:3000/data
-
-
-###
-DELETE http://localhost:3000/products/32
-Content-Type: application/json

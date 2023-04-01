@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <div class="firstbox">
+        <p id="phi" >Hi! <a href="">Sign in </a>or <a href="">register</a></p>
+        <p class="pdaily">Daily Deals</p>
+        <p class="pdaily">Help & Contact</p>
+        <p id="psell">Sell</p>
+        <a href="./saved.html"> <p class="Watchlist">Watchlist</p></a>
+        <p class="Watchlist">My eBay</p>
+       <a href=""><img class="firstpick" src="ebay_pic/bell (1).png" alt=""></a>
+       <a href="./liked.html"><img class="firstpick" src="ebay_pic/troli.png" alt=""></a>
+
+    </div>
+   
+    <div id="form">
+    <form action="submit">
+    <h2 id="detail">Shipping Details</h2>
+    <div class="name"> 
+    <div>
+    <h5>FIRST</h5>
+    <input type="text" placeholder="First name" id="fname">
+    </div>
+    <div>
+    <h5>LAST</h5>
+    <input type="text" placeholder="Last name" id="lname">
+    </div>
+    </div>
+    <h5 class="heading">STREET</h5>
+    <input type="text" placeholder="Street" class="street">
+    <div id="locat">
+        <div>
+        <h5>CITY</h5>
+        <input type="text" placeholder="City" id="city">
+        </div>
+        <div id="State">
+        <h5>STATE</h5>
+        <input type="text" placeholder="State" class="State">
+        </div>
+        <div id="zip">
+        <h5>PINCODE</h5>
+        <input type="text" placeholder="Pincoded" class="zip">
+        </div>
+    </div>
+    <div class="mob">
+        <h5>PHONE NO.</h5>
+        <input type="text" placeholder="Phone" id="phone">
+       </div>
+    <h2 id="detail">Payment Information</h2>
+    <h5 class="heading">CREDIT CARD NO.</h5>
+    <input type="text" placeholder="Card no." id="card_no">
+    <div class="cvv">
+        <div>
+        <h5>EXP</h5>
+        <input type="text" id="exp">
+    </div>
+    <div>
+        <h5>CVV</h5>
+        <input type="text" id="cvv">
+    </div>
+    </div>
+    <div id="btn">
+        <div>
+  <button class="proceed">PROCEED</button>
+</div>
+</div>
+</form>
+<div>
+<a href="./liked.html"> <button class="cart">BACK TO CART</button></a>
+</div>
+</div> 
+<div id="otp">
+<h4>OTP</h4>
+<input type="text" class="otp">
+<button id="enter">Enter</button>
+</div>
+</body>
+<script src="./js/checkout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
