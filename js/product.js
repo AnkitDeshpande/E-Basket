@@ -23,7 +23,7 @@ async function fetchData(){
         data.forEach(element => {
             globalData.push(element);
         });
-        displaydata(globalData)
+        displaydata(data)
        
     } catch (error) {
         console.log(error);

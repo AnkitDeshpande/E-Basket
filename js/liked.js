@@ -90,12 +90,14 @@ let WishlistData = JSON.parse(localStorage.getItem("wish-list")) || []
  });
 
 let sum = 0;
-let sum2 = 0
+let sum2 = 0;
+let subtotal = 0
 for(let i=0; i<productData.length; i++){
-    sum2 += productData[i].price;
+    sum2 += productData[i].price
     sum += Math.floor(sum2/productData[i].discountPercentage)
+    subtotal = sum2-sum
 }
-total.textContent = sum;
+total.textContent = subtotal;
 itemprice.textContent = sum2;
 count.textContent = productData.length;
 
