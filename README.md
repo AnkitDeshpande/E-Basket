@@ -29,6 +29,9 @@ This is our team's project - a replica of the popular e-commerce website eBay. O
 -   Order history
 -   Contact seller feature
 
+## Netlify
+https://gleeful-semolina-1313a9.netlify.app
+
 ## Installation and Setup
 
 **Install Json-Server**
