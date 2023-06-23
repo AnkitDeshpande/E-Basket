@@ -1,4 +1,4 @@
-# ASOS
+# E-basket
 
 This is our team's project - a replica of the popular e-commerce website eBay. Our team consists of four members and we have worked hard to bring you a fully functional and user-friendly website.
 
